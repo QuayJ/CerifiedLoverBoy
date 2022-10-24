@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Become a Scorpion</title>
+    </head>
+    <body>
+        <img src="Drake-Certified-Lover-Boy-1.jpeg" alt="Certified Lover Boy Logo" width="175">
+
+        <h1>You're OVO bound</h1>
+        <!-- Below; A Drake visual should be here -->
+        <video width="450" height="240" autoplay muted>
+          <source src="Y2Mate.is - DJ Khaled ft. Drake & Lil Baby - STAYING ALIVE (Official Video)-PM2f835zx88-480p-1655501824650.mp4" type="video/mp4">
+        </video>
+        <!-- This starts the subscribe process -->
+        <form action="https://giphy.com/gifs/storyful-nba-drake-speech-7WvAUvZZTRpSuudobh/fullscreen" method="get">
+
+            <label for="firstName">First Name:
+            <input type="text" id="firstName" placeholder="Drake"><br>
+            <label for="lastName">Last name:
+            <input type="text" id="lastName" placeholder="Graham"><br>
+            <label for="email">Email:
+            <input type="email" id="email" placeholder="Drizzy@Toronto.CA" required><br>
+            <label>Username:<input type="text" placeholder="Certified Lover"><br>
+
+            When is your birthday?
+                <label for="birthday"><input type="date" id="birthday"></label>
+
+                <!-- this is practice php would like to add age verification later on 
+                    <?php
+                        define ("legal_age", 16);
+                        $age = 16;
+                        if ($age < "legal_age"){
+                            echo ("Certified Ready");
+                        } else {
+                            echo ("You're not Ready to be Cetified");
+                        }
+                    ?>
+                    -->
+                    
+            <br><label for="paswword">Password:<input type="password" id="password" placeholder="6SixGod"></label>
+
+                <p><input type="submit"></p>
+        </form>
+        <!-- for table, maybe put circle pictures for the winner/loser or like ID pictures of opp/ally-->
+        <table border="2">
+                    <tr>
+                        <th>The Opp</th>
+                        <th>The Diss</th>
+                        <th>Drake</th>
+                        <th>W or L</th>
+                    </tr>
+                    <tr>
+                        <td>Meek Millz</td>
+                        <td>Wanna Know</td>
+                        <td>Charged Up, Back to Back</td>
+                        <td>Big L</td>
+                    </tr>
+                    <tr>
+                        <td>Pusha T</td>
+                        <td>Infared</td>
+                        <td>Duppy</td>
+                        <td>Hold that L</td>
+                    </tr>
+                </table>
+
+
+
+
+            <a href="index.html"><h2>Go to Papi's Home</h2></a>
+            <a href="secondpage.html"><h2>Return to Poll</h2></a>
+
+
+        <footer>
+            <p>Author: ShaQuaya Wilson</p>
+            <p><a href="mailto:Drake@Toronto.com">Drake@Toronto.com</a></p>
+        </footer>
+    </body>
+
+</html>
