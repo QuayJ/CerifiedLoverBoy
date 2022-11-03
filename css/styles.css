@@ -17,13 +17,19 @@ body {
   margin-right: auto;
 }
 
-body {
-    background-color: floralwhite
+#homebody {
+    background-color: black
 }
 
-body
-    h1 { font-family: Papyrus, fantasy; font-size: 48px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 18px; } h2 { font-family: Papyrus, fantasy; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Papyrus, fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 12.6px; } blockquote { font-family: Papyrus, fantasy; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Papyrus, fantasy; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px;
+body {
+  color: white;
 }
+    h1 { font-family: Papyrus, fantasy; font-size: 48px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 18px; } 
+    h2 { font-family: Papyrus, fantasy; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+    p { font-family: Papyrus, fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 12.6px; } 
+    blockquote { font-family: Papyrus, fantasy; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+    pre { font-family: Papyrus, fantasy; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px;}
+
 
 
 #Intro {
@@ -32,6 +38,7 @@ body
   color: red;
   
 }
+
 
 /*this is for spotlight cursror, need to add javascript*/
 
@@ -95,6 +102,8 @@ document.addEventListener('pointermove', (pos) => {
   left: 50%;
   overflow: hidden;
   border: 10px solid black;
+  border-radius: 15% 38% 44% 72%;
+  opacity: 0.48;
 }
 .team_wrapper{
   width: 100%;
@@ -144,6 +153,139 @@ document.addEventListener('pointermove', (pos) => {
   width: 65%
 }
 
-#ovoTeam{
-  background-color:grey;
+.ovoTeam{
+  background-color:black;
+}
+/*Styling for Countdown timer on home page*/
+.container {
+  margin-top: 50px;
+}
+.counter .title {
+    color: #dd7700;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.counter .sq {
+    color: #dd7700;
+    display: inline-block;
+    text-align: center;
+}
+.counter .sq .bord {
+    border: 3px solid #dd7700;
+    padding: 12px 15px;
+    margin-right: 18px;
+    text-indent: 0px;
+    font-family: 'Helvetica';
+    font-size: 22px;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    width: 54px;
+}
+.counter .sq span {
+    clear: both;
+    display: block;
+    text-indent: -15px;
+    font-size: 25px;
+    font-size: 1.6rem;
+    font-family: "Helvetica";
+}
+.well {
+  text-align: center;
+  max-width: 400px;
+}
+
+/*Styling for Slideshow on OVO Sound Page*/
+/*Styling for Slideshow on OVO Sound Page*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: inline;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
