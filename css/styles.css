@@ -2,35 +2,9 @@ p {
   color: darkgoldenrod;
 }
 
-body {
-  background-color:floralwhite
-}
-
-body {
-    font-family: 'Comforter Brush', serif;
-}
-
-#Owl{
-  border: 4px solid black;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #homebody {
     background-color: black
 }
-
-body {
-  color: white;
-}
-    h1 { font-family: Papyrus, fantasy; font-size: 48px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 18px; } 
-    h2 { font-family: Papyrus, fantasy; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
-    p { font-family: Papyrus, fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 12.6px; } 
-    blockquote { font-family: Papyrus, fantasy; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
-    pre { font-family: Papyrus, fantasy; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px;}
-
-
 
 #Intro {
   background-color: black;
@@ -89,9 +63,8 @@ document.addEventListener('pointermove', (pos) => {
   
 });
 */
-.navigation_tab {
+.navigation_tab {}
 
-}
 /*OVO team page styles below */
 
 .team_container{
@@ -289,3 +262,124 @@ document.addEventListener('pointermove', (pos) => {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/*For all done container button*/
+.pollContainer{
+  display: inline-flex;
+  flex: 1 1 300px;
+  border-radius: 10px;
+  border: 1pxp solid #ccc;
+  overflow: hidden;
+}
+
+/*Below is all css styling for index.html*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.papisHome{
+  height: 100vh;
+  background-image: linear-gradient(to top, rgb(19, 25, 27), rgb(52, 54, 56));
+}
+.container{
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+.box{
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /*transform: rotate(-90 deg);*/
+  transform-style: preserve-3d;
+  animation: animate 5s infinite;
+}
+@keyframes animate {
+  0%{
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+  25%{
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  50%{
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  75%{
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  100%{
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+}
+.card{
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  padding: 100px 0px;
+  color: blue;
+  background: black;
+  border: 2px solid white;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  transition: all 1s;
+} 
+#front{
+  transform: translateZ(125px);
+}
+#back{
+  transform: translateZ(-125px);
+}
+#left{
+  right: 125px;
+  transform: rotateY(-90deg);
+}
+#right{
+  right: 125px;
+  transform: rotateY(90deg);
+}
+#top{
+  bottom: 125px;
+  transform: rotateX(90deg);
+} 
+#bottom{
+  top: 125px;
+  transform: rotateX(-90deg);
+}
+input{
+  height: 50px;
+  width: 100px;
+  background: grey;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  top: -100px;
+  left: 175px;
+}
+input:focus~ .box #front{
+  transform: translateZ(180px) rotateY(360deg);
+}
+input:focus~ .box #back{
+  transform: translateZ(-180px) rotateY(360deg);
+}
+input:focus~ .box #left{
+  right: 180px;
+}
+input:focus~ .box #right{
+  left: 180px;
+}
+input:focus~ .boxb#top{
+  bottom: 180px;
+}
+input:focus~ .box #bottom{
+  top: 180px;
+}
+
